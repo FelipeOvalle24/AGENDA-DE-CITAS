@@ -1,0 +1,111 @@
+body{
+    background: #A076F9;
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/*ACA COMIENZA EL CODIGO DEL MAIN*/
+#agenda-de-citas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+#container-citas{
+    background: #6528F7;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    border: solid 3px #D7BBF5;
+}
+#container-citas div{
+    padding: 2%;
+}
+#datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #B2A4FF;
+    width: 50%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    border: solid 2px #EDE4FF;
+}
+#datos button{
+    margin-top: 5%;
+    width: 50%;
+    height: 35px;
+    border-radius: 10px;
+    background: #A076F9;
+    font-family: 'Ysabeau Infant', sans-serif;
+    border: solid 1px black;
+}
+#datos button:hover{
+    cursor: pointer;
+    background: #7237f2;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+#datos input{
+    width: 250px;
+    border-radius: 5px;
+    height: 20px;
+    border: none;
+}
+#titulo h1{
+    font-size: 180%;
+}
+.cita{
+    background: #B2A4FF;
+    width: 30%;
+    padding: 1%;
+    margin: 0.5%;
+    border-radius: 15px;
+    border: solid 2px #EDE4FF;
+}
+#citas-agregadas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+.eliminar-cita{
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    background: #A076F9;
+    font-family: 'Ysabeau Infant', sans-serif;
+    border: solid 1px black;
+    font-size: 110%;
+}
+/*ACA TERMINA EL CODIGO DEL MAIN*/
+@media screen and (max-width: 768px) {
+    #container-citas{
+        width: 95%;
+    }
+    #datos{
+        width: 85%;
+        margin-bottom: 4%;
+    }
+    #datos button{
+        width: 65%;
+        height: 40px;
+    }
+    #datos input{
+        width: 250px;
+        border-radius: 5px;
+        height: 20px;
+        border: none;
+    }
+    .cita{
+        width: 85%;
+        margin: 2%;
+    }
+    .eliminar-cita{
+        width: 50%;
+        margin-left: 25%;
+    }
+}

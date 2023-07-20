@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AGENDA DE CITAS</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300&display=swap" rel="stylesheet">
+    <body>
+        <main>
+            <section id="agenda-de-citas">
+                <div id="container-citas">
+                    <div id="titulo">
+                        <h1>AGENDA DE CITAS PARA LASHISTAS</h1>
+                    </div>
+                    <div id="datos">
+                        <form action="">
+                            <label for="nombre-cliente">
+                                <p>NOMBRE DEL CLIENTE</p>
+                                <input type="text" placeholder="Nombre del cliente" id="nombre-cliente" required>
+                            </label>
+                            <label for="efecto">
+                                <p>EFECTO</p>
+                                <input type="text" placeholder="Efecto a realizar" id="efecto" required>
+                            </label>
+                            <label for="valor">
+                                <p>VALOR DEL EFECTO</p>
+                                <input type="number" placeholder="Valor del efecto" id="valor" required>
+                            </label>
+                            <label for="nombre-de-lashista">
+                                <p>NOMBRE DE LASHISTAS</p>
+                                <input type="text" placeholder="Nombre de quien realiza el efecto" id="nombre-de-lashista" required>
+                            </label>
+                            <label for="fecha">
+                                <p>FECHA DE REALIZACIÓN</p>
+                                <input type="date" id="fecha" required>
+                            </label>
+                            <button onclick="agendarCita()"><strong>AGENDAR NUEVA CITA</strong></button>
+                        </form> 
+                    </div>
+                </div>
+            </section>
+            <section id="citas-agregadas"></section>
+        </main>
+        <script src="./main.js"></script>
+    </body>
+</html>
